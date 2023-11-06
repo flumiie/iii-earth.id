@@ -1,7 +1,7 @@
 form: flex-pages
 id: 'tmp://forms/session/411d81b80d9e35f024996517b241ba45'
 unique_id: 411d81b80d9e35f024996517b241ba45
-url: 'http://localhost/iii-earth.id/admin/pages/home/about'
+url: 'https://iii-earth-id.000webhostapp.com/admin/pages/home/about'
 user:
   username: flumi
   email: ferickandrew.y@gmail.com

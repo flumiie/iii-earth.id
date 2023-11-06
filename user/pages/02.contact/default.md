@@ -1,5 +1,5 @@
 ---
-title: About
+title: 'Become a Member'
 ---
 
 <section class="hero-wrap hero-wrap-2 js-halfheight" style="background-image: url('images/bg_3.jpg');" data-stellar-background-ratio="0.5">
