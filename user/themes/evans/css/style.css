@@ -8191,7 +8191,7 @@ h1, h2, h3, h4, h5,
         color: #fff; } }
   @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav {
-      padding-bottom: 10px; } }
+      padding-bottom: 0px /*10px*/; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
     font-size: 12px;
     padding-top: 1.8rem;
@@ -8339,8 +8339,7 @@ h1, h2, h3, h4, h5,
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  .hero h1.vr,
-  .hero h1.smaller-vr {
+  .hero h1.vr {
     font-family: "Bahnschrift SemiBold", "Barlow Condensed", Arial, sans-serif;
     position: absolute;
     top: 50%;
@@ -8357,17 +8356,25 @@ h1, h2, h3, h4, h5,
     /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #ffffff; }
-  .hero h1.smaller-vr {
-    font-size: 11vw; }
-  
   /* .hero h1.vr.text-center:hover span {
     color: #007bff;
     -webkit-text-fill-color: #007bff; } */
+
+@media screen and (max-width: 500px) {
+  .hero h1.vr {
+    font-size: 11vw;
+  }
+}
 
 .join-us {
   position: relative;
   z-index: 1;
   text-align: center;
+  top: 0.5em;
+}
+.join-us button {
+  font-size: 20px;
+  font-family: 'Bahnschrift Light';
 }
 
 .navigate-down {

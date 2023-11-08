@@ -4,7 +4,11 @@ body_classes: "title-center title-h1h2"
 ---
 
 <section id="home-section" class="hero">
-  <h1 class="vr text-center">Hidup <span id="header-word-marquee">Sehat</span> bersama THREE</h1>
+  <h1 class="vr text-center">Hidup <span id="header-word-marquee">Sehat</span> bersama THREE
+    <div class="join-us">
+      <button class="btn btn-primary py-3 px-5" onclick="window.location.href='/contact';">Bergabung Sekarang</button>
+    </div>
+  </h1>
   <div class="js-fullheight">
     <div class="half">
       <div class="home-slider owl-carousel">
@@ -27,9 +31,6 @@ body_classes: "title-center title-h1h2"
           </div>
         </div> -->
       </div>
-    </div>
-    <div class="join-us">
-      <button class="btn btn-primary py-3 px-5" onclick="window.location.href='/contact';">Bergabung Sekarang</button>
     </div>
     <div class="navigate-down">
       <button class="btn py-3 px-4">
