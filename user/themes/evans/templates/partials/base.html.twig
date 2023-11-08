@@ -22,13 +22,11 @@
 {% endblock head %}
 
 {% block stylesheets %}
-    {% do assets.addCss('theme://css/open-iconic-bootstrap.min.css') %}
     {% do assets.addCss('theme://css/animate.css') %}
     {% do assets.addCss('theme://css/owl.carousel.min.css') %}
     {% do assets.addCss('theme://css/owl.theme.default.min.css') %}
     {% do assets.addCss('theme://css/magnific-popup.css') %}
     {% do assets.addCss('theme://css/aos.css') %}
-    {% do assets.addCss('theme://css/ionicons.min.css') %}
     {% do assets.addCss('theme://css/bootstrap-datepicker.css') %}
     {% do assets.addCss('theme://css/jquery.timepicker.css') %}
     {% do assets.addCss('theme://css/flaticon.css') %}
@@ -52,7 +50,7 @@
     {% do assets.addJs('theme://js/aos.js', {group:'bottom'}) %}
     {% do assets.addJs('theme://js/jquery.animateNumber.min.js', {group:'bottom'}) %}
     {% do assets.addJs('theme://js/scrollax.min.js', {group:'bottom'}) %}
-    {% do assets.addJs('theme://https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false', {group:'bottom'}) %}
+    {% do assets.addJs('https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false', {group:'bottom'}) %}
     {% do assets.addJs('theme://js/google-map.js', {group:'bottom'}) %}
     {% do assets.addJs('theme://js/main.js', {group:'bottom'}) %}
 {% endblock %}

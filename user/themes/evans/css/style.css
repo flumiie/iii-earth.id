@@ -8165,6 +8165,24 @@ h1, h2, h3, h4, h5,
 .text-primary {
   color: #fdcb6e !important; }
 
+.ftco-three-logo img {
+  width: 60%;
+}
+.ftco-three-logo span {
+  font-size: 20%;
+}
+.ftco-three-logo h1 {
+  font-size: 50px;
+}
+@media screen and (max-width: 600px) {
+  .ftco-three-logo img {
+    width: 85%;
+  }
+  .ftco-three-logo span {
+    font-size: 55%;
+  }
+}
+
 .ftco-navbar-light {
   background: transparent !important;
   position: absolute;
@@ -8855,6 +8873,11 @@ textarea.form-control {
     font-size: 17px;
     font-weight: 400;
     color: #000000; }
+  
+.ftco-footer ul li {
+  display: flex !important;
+  justify-content: center;
+}
 
 .ftco-footer-social li {
   list-style: none;
@@ -9017,9 +9040,6 @@ textarea.form-control {
       width: 100%; }
       @media (min-width: 1200px) {
         .portfolio-wrap .text .desc .top {
-          -webkit-transform: translateY(50%);
-          -ms-transform: translateY(50%);
-          transform: translateY(50%);
           -moz-transition: all 0.3s ease;
           -o-transition: all 0.3s ease;
           -webkit-transition: all 0.3s ease;
@@ -9030,15 +9050,12 @@ textarea.form-control {
             -ms-transform: translateY(0);
             transform: translateY(0); }
         .portfolio-wrap .text .desc .absolute {
-          opacity: 0;
+          opacity: 1;
           -moz-transition: all 0.3s ease;
           -o-transition: all 0.3s ease;
           -webkit-transition: all 0.3s ease;
           -ms-transition: all 0.3s ease;
-          transition: all 0.3s ease;
-          -webkit-transform: translateY(-20%);
-          -ms-transform: translateY(-20%);
-          transform: translateY(-20%); }
+          transition: all 0.3s ease; }
           .portfolio-wrap .text .desc .absolute.relative {
             opacity: 1;
             -webkit-transform: translateY(0);
@@ -9094,17 +9111,17 @@ textarea.form-control {
           position: absolute;
           top: 50%;
           left: 0;
-          -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
           max-width: 60%; }
         .portfolio-entry .one-half.half-text .text-2 {
           position: absolute;
           top: 50%;
           right: 0;
-          -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
           max-width: 58%; } }
     @media (min-width: 1200px) {
       .portfolio-entry .one-half.half-text {
@@ -9119,17 +9136,17 @@ textarea.form-control {
           position: absolute;
           top: 50%;
           left: 0;
-          -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
           max-width: 58%; }
         .portfolio-entry .one-half.half-text .text-2 {
           position: absolute;
           top: 50%;
           right: 0;
-          -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
           max-width: 58%; } }
     .portfolio-entry .one-half.half-text .subheading {
       display: block;
@@ -9153,24 +9170,24 @@ textarea.form-control {
       width: 100%; }
       @media (min-width: 1200px) {
         .portfolio-entry .one-half.half-text .text .desc .top, .portfolio-entry .one-half.half-text .text-2 .desc .top {
-          -webkit-transform: translateY(50%);
-          -ms-transform: translateY(50%);
-          transform: translateY(50%);
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
           -moz-transition: all 0.3s ease;
           -o-transition: all 0.3s ease;
           -webkit-transition: all 0.3s ease;
           -ms-transition: all 0.3s ease;
           transition: all 0.3s ease; }
         .portfolio-entry .one-half.half-text .text .desc .absolute, .portfolio-entry .one-half.half-text .text-2 .desc .absolute {
-          opacity: 0;
+          opacity: 1;
           -moz-transition: all 0.3s ease;
           -o-transition: all 0.3s ease;
           -webkit-transition: all 0.3s ease;
           -ms-transition: all 0.3s ease;
           transition: all 0.3s ease;
-          -webkit-transform: translateY(-20%);
-          -ms-transform: translateY(-20%);
-          transform: translateY(-20%); } }
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0); } }
       .portfolio-entry .one-half.half-text .text .desc .custom-btn, .portfolio-entry .one-half.half-text .text-2 .desc .custom-btn {
         text-transform: uppercase;
         font-size: 12px;

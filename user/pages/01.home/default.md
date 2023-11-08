@@ -54,11 +54,18 @@ body_classes: "title-center title-h1h2"
   </div>
 </section>
 <section class="ftco-section ftco-portfolio">
-  <div class="container-fluid">
+  <div class="ftco-three-logo container-fluid">
     <div class="row justify-content-center pb-3">
       <div class="col-md-10 mb-5 heading-section text-center ftco-animate">
-        <h2 class="mb-5">THREE <span style="font-family:'Bahnschrift SemiBold';text-align:center;font-size: 0.2em">by</span><span style="font-size:0.5em">III International</span></h2>
-        <h1>Merk apa ini?</h1>
+        <img src="images/iii_three.png" alt="iii.three" />
+        <h2 class="mb-5">
+          <span style="font-family:'Bahnschrift SemiBold';text-align:center">by</span>
+          <span style="text-align:center">III International</span>
+        </h2>
+        <h1><i>Merk apa ini?</i></h1>
+        <div class="icon">
+          <span aria-hidden="true" data-icon="&#xe001;" class="icon-angle-double-down" style="font-size: 26px"></span>
+        </div>
       </div>
     </div>
   </div>
@@ -77,7 +84,7 @@ body_classes: "title-center title-h1h2"
                     </h2>
                   </div>
                   <div class="absolute">
-                    <p>THREE menyediakan supplemen kesehatan, dengan formulasi optimal hasil dari penelitian selama puluhan tahun oleh para ahli di bidangnya.<br/><br/>Bermarkas di Utah, Amerika Serikat, THREE tidak hanya bertujuan untuk membangun kesehatan yang lebih baik melalui produk yang berkualitas, tapi juga menjadi platform dinamis untuk kewirausahaan.</p>
+                    <p style="background: rgba(255,255,255,0.15)">THREE menyediakan supplemen kesehatan, dengan formulasi optimal hasil dari penelitian selama puluhan tahun oleh para ahli di bidangnya.<br/><br/>Bermarkas di Utah, Amerika Serikat, THREE tidak hanya bertujuan untuk membangun kesehatan yang lebih baik melalui produk yang berkualitas, tapi juga menjadi platform dinamis untuk kewirausahaan.</p>
                   </div>
                 </div>
               </div>
@@ -99,7 +106,7 @@ body_classes: "title-center title-h1h2"
               </h2>
             </div>
             <div class="absolute">
-              <p>Produk yang berkualitas adalah KUNCI. Semua suplemen THREE di formulasi kan berdasarkan penelitian yang menyeluruh serta teknologi unggul, tanpa ada kompromi dalam kualitas, efiktivitas, dan keamanan produk.</p>
+              <p style="background: rgba(255,255,255,0.15)">THREE memiliki 6 produk. Semua diformulasi kan berdasarkan penelitian yang menyeluruh serta teknologi unggul, tanpa ada kompromi dalam kualitas, efiktivitas, dan keamanan produk. Produk yang berkualitas adalah KUNCI.</p>
             </div>
           </div>
         </div>
@@ -145,7 +152,7 @@ body_classes: "title-center title-h1h2"
       </div>
     </div>
   </section>
-    <section class="services-section py-5 py-md-0">
+  <section class="services-section py-5 py-md-0">
     <div class="container">
       <div class="row no-gutters d-flex">
         <div class="col-md-6 col-lg-4 d-flex align-self-stretch ftco-animate">
@@ -180,6 +187,16 @@ body_classes: "title-center title-h1h2"
               <p>Dirancang khusus untuk bekerja pada tingkat sel, perpaduan unik antara vitamin, mineral, dan fitokimia mendukung dan meningkatkan respons kekebalan alami tubuh Anda</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ftco-section ftco-intro">
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-md-12" style="text-align:center">
+          <p>Hubungi kami untuk info lebih lanjut mengenai detail isi, cara penggunaan, dan pertanyaan produk lainnya</p>
+          <button class="btn btn-primary py-3 px-5" onclick="window.location.href='/contact';">Contact Us</button>
         </div>
       </div>
     </div>
