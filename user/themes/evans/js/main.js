@@ -267,7 +267,7 @@ AOS.init({
 
   var headerTextMarquee = function () {
     let count = 0;
-    let wordsArray = ["Sehat", "Bahagia", "Sukses"];
+    let wordsArray = ["Sehat", "Sukses", "Bahagia"];
     setInterval(function () {
       count++;
       $("#header-word-marquee").fadeOut(300, function () {
