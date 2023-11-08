@@ -65,7 +65,7 @@ body_classes: "title-center title-h1h2"
     <div class="row no-gutters" >
       <div class="col-md-12 portfolio-wrap">
         <div class="row no-gutters align-items-center">
-          <div class="col-md-5 img js-fullheight" style="background-image: url(images/three_1.png);"></div>
+          <div class="col-md-5 img js-fullheight" style="background-image: url(images/three_1.jpg);"></div>
           <div class="col-md-7">
             <div class="text pt-5 pl-0 pl-lg-5 pl-md-3 ftco-animate">
               <div class="px-12 px-lg-12">
