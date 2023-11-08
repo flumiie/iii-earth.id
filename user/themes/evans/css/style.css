@@ -8335,10 +8335,13 @@ h1, h2, h3, h4, h5,
 
 .hero {
   position: relative;
-  z-index: 0; }
+  z-index: 0;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .hero h1.vr,
   .hero h1.smaller-vr {
-    font-family: "Barlow Condensed", Arial, sans-serif;
+    font-family: "Bahnschrift SemiBold", "Barlow Condensed", Arial, sans-serif;
     position: absolute;
     top: 50%;
     left: 0;
@@ -8346,24 +8349,42 @@ h1, h2, h3, h4, h5,
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-size: 21vw;
+    font-size: 4vw;
     text-transform: uppercase;
     z-index: 1;
-    color: #fff;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
     /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff; }
+    -webkit-text-stroke-color: #ffffff; }
   .hero h1.smaller-vr {
     font-size: 11vw; }
+  
+  /* .hero h1.vr.text-center:hover span {
+    color: #007bff;
+    -webkit-text-fill-color: #007bff; } */
+
+.join-us {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.navigate-down {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .home-wrap .half {
   width: 50%;
   background: #000000; }
 
 .owl-carousel {
-  position: relative; }
+  position: relative;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y; }
   .owl-carousel .owl-item {
     opacity: .4; }
     .owl-carousel .owl-item.active {
@@ -8397,6 +8418,7 @@ h1, h2, h3, h4, h5,
         background: #b3b3b3; }
   .owl-carousel.home-slider {
     position: relative;
+
     height: 750px;
     z-index: 0; }
     .owl-carousel.home-slider .slider-item {
@@ -8770,6 +8792,15 @@ textarea.form-control {
   @media (max-width: 767.98px) {
     .ftco-section {
       padding: 6em 0; } }
+
+#subheader-word-marquee {
+  position: absolute;
+}
+@media screen and (max-width:505px) {
+  #subheader-word-marquee {
+    font-size: 2.75em;
+  }
+}
 
 .ftco-no-pt {
   padding-top: 0 !important; }

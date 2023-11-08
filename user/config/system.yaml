@@ -1,12 +1,12 @@
 absolute_urls: false
-timezone: ''
+timezone: null
 default_locale: null
 param_sep: ':'
 wrapped_site: false
 reverse_proxy_setup: false
 force_ssl: false
 force_lowercase_urls: true
-custom_base_url: ''
+custom_base_url: null
 username_regex: '^[a-z0-9_-]{3,16}$'
 pwd_regex: '(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'
 intl_enabled: true
@@ -16,7 +16,7 @@ http_x_forwarded:
   port: true
   ip: true
 languages:
-  supported: {  }
+  supported: null
   default_lang: null
   include_default_lang: true
   include_default_lang_file_extension: true
@@ -76,13 +76,13 @@ pages:
     - json
     - rss
     - atom
-  append_url_extension: ''
+  append_url_extension: null
   expires: 604800
   cache_control: null
   last_modified: false
   etag: true
   vary_accept_encoding: false
-  redirect_default_code: 302
+  redirect_default_code: '302'
   redirect_trailing_slash: 1
   redirect_default_route: 0
   ignore_files:
@@ -113,9 +113,17 @@ cache:
   gzip: false
   allow_webserver_gzip: false
   redis:
-    socket: false
+    socket: '0'
     password: null
     database: null
+    server: null
+    port: null
+  memcache:
+    server: null
+    port: null
+  memcached:
+    server: null
+    port: null
 twig:
   cache: true
   debug: true
@@ -145,7 +153,7 @@ assets:
   collections:
     jquery: 'system://assets/jquery/jquery-3.x.min.js'
 errors:
-  display: true
+  display: 1
   log: true
 log:
   handler: file
@@ -169,7 +177,7 @@ images:
   cls:
     auto_sizes: false
     aspect_ratio: false
-    retina_scale: 1
+    retina_scale: '1'
   defaults:
     loading: auto
   watermark:
@@ -180,8 +188,8 @@ images:
     watermark_all: false
 media:
   enable_media_timestamp: false
-  unsupported_inline_types: {  }
-  allowed_fallback_types: {  }
+  unsupported_inline_types: null
+  allowed_fallback_types: null
   auto_metadata_exif: false
   upload_limit: 41943040
 session:
@@ -199,7 +207,7 @@ session:
   path: null
 gpm:
   releases: stable
-  official_gpm_only: true
+  official_gpm_only: false
   verify_peer: true
 http:
   method: auto

@@ -83,8 +83,10 @@ AOS.init({
 
   var carousel = function () {
     $(".home-slider").owlCarousel({
+      mouseDrag: false,
+      touchDrag: false,
       loop: true,
-      autoplay: true,
+      autoplay: false,
       margin: 0,
       animateOut: "fadeOut",
       animateIn: "fadeIn",
@@ -135,6 +137,12 @@ AOS.init({
     });
   };
   carousel();
+
+  $(".navigate-down button").on("click", function (e) {
+    e.preventDefault();
+    var n = $("#home-section").height();
+    $("html, body").animate({ scrollTop: n }, 750, "easeInOutCirc");
+  });
 
   $("nav .dropdown").hover(
     function () {
@@ -256,6 +264,40 @@ AOS.init({
     );
   };
   counter();
+
+  var headerTextMarquee = function () {
+    let count = 0;
+    let wordsArray = ["Sehat", "Bahagia", "Sukses"];
+    setInterval(function () {
+      count++;
+      $("#header-word-marquee").fadeOut(300, function () {
+        $(this)
+          .text(wordsArray[count % wordsArray.length])
+          .fadeIn(300);
+      });
+    }, 3000);
+  };
+  headerTextMarquee();
+
+  var subHeaderTextMarquee = function () {
+    let count = 0;
+    let wordsArray = [
+      `Sedang mencari informasi tentang <span>THREE</span>?`,
+      `Tertarik untuk mencoba produk <span>THREE</span>?`,
+      `Ingin bergabung menjadi Brand Ambassador <span>THREE</span>?`,
+      `Ingin mengembangkan bisnis Anda dengan <span>THREE</span>?`,
+      `Ingin mendapatkan pasif income?`,
+    ];
+    setInterval(function () {
+      count++;
+      $("#subheader-word-marquee").fadeOut(500, function () {
+        $(this)
+          .html(wordsArray[count % wordsArray.length])
+          .fadeIn(500);
+      });
+    }, 3000);
+  };
+  subHeaderTextMarquee();
 
   var contentWayPoint = function () {
     var i = 0;
