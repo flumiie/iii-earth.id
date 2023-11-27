@@ -1,48 +1,28 @@
-# Composer
-.composer
-vendor/*
-!*/vendor/*
 
-# Sass
-.sass-cache
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# Grav Specific
-backup/*
-!backup/.*
-cache/*
-!cache/.*
-assets/*
-!assets/.*
-logs/*
-!logs/.*
-user/accounts/*
-!user/accounts/.*
-user/data/*
-!user/data/.*
-user/plugins/*
-!user/plugins/.*
-user/**/config/security.yaml
+# testing
+/coverage
 
-# Environments
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
 .env
-.gravenv
+.env.local
+.idea
 
-# OS Generated
-.DS_Store*
-ehthumbs.db
-Icon?
-Thumbs.db
-*.swp
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# phpstorm
-.idea/*
-
-# testing stuff
-tests/_output/*
-tests/_support/_generated/*
-tests/cache/*
-tests/error.log
-system/templates/testing/*
-/user/config/versions.yaml
-
-.vscode/*
+.tina/__generated__
